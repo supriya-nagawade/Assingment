@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Student Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="student.css">
+ </head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                   <div>
+                    <label for="Id">Id</label>
+                        <input type="number" name="number" id="number">
+                   </div>
+
+                   <div>
+                    <label for="rollno">Roll No</label>
+                        <input type="number" name="rollno" id="number">
+                   </div>
+
+                    <div>
+                        <label for="Name">LastName</label>
+                        <input type="text" name="LastName" id="LastName">
+                    </div>
+                    
+                    <div>
+                        <label for="Name">FirstName</label>
+                        <input type="text" name="FirstName" id="FirstName">
+                    </div>
+                     
+                    <div>
+                        <label for="Name">MiddleName</label>
+                        <input type="text" name="MiddleName" id="MiddleName">
+                    </div>
+
+                    <div>
+                        <label for="DateofJoining">Date of Joining</label>
+                        <input type="text" name="DateofJoining" id="DateofJoining">
+                    </div>
+                    
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Roll no</th>
+                                <th>LastName</th>
+                                <th>FirstName</th>
+                                <th>MiddleName</th>
+                                <th>DateofJoining</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./student.js"></script>
+</body>
+</html>
